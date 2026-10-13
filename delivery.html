@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Live Delivery Tracking | Digital Agri Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="assets/images-integration.css" />
+</head>
+<body data-page="delivery" data-auth="optional">
+  <div class="app-shell">
+    <aside class="sidebar" id="app-sidebar"></aside>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <div class="main-wrap">
+      <header class="topbar" id="app-topbar"></header>
+      <main class="page live-tracking-page">
+        <div id="delivery-root">
+          <div class="loading-state" style="padding:40px;text-align:center">
+            <div class="spinner" style="margin:0 auto 16px"></div>
+            <h3>Loading Delivery Tracking...</h3>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- App Core — NO external map/socket libraries -->
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/notifications.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/orders.js"></script>
+  <script src="js/logistics.js"></script>
+  <script src="js/images-init.js"></script>
+</body>
+</html>

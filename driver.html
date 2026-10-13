@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Driver Console | Digital Agri Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="assets/images-integration.css" />
+</head>
+<body data-page="driver" data-auth="optional">
+  <div class="app-shell">
+    <aside class="sidebar" id="app-sidebar"></aside>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <div class="main-wrap">
+      <header class="topbar" id="app-topbar"></header>
+      <main class="page driver-console-page">
+        <div class="page-header" style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px">
+          <div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+              <span class="live-pulse-badge">
+                <span class="pulse-dot"></span> DRIVER CONSOLE
+              </span>
+              <span class="trk-live-pill pill-active">
+                <span class="trk-pill-dot"></span> Demo Mode
+              </span>
+            </div>
+            <h1 class="page-title" style="margin:0">Delivery Driver Dashboard</h1>
+            <p class="page-sub" style="margin:4px 0 0">Manage active deliveries and update order status</p>
+          </div>
+          <a class="btn btn-ghost btn-sm" href="delivery.html">View Buyer Tracking ↗</a>
+        </div>
+
+        <!-- Order Selector -->
+        <div class="card" style="margin-bottom:20px">
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+            <label for="driver-order-select" style="font-weight:700;display:flex;align-items:center;gap:8px">
+              📦 Select Delivery Order:
+            </label>
+            <select id="driver-order-select" class="trk-select" style="max-width:420px"></select>
+          </div>
+        </div>
+
+        <!-- Active Order Details -->
+        <div id="driver-active-order-card" class="card" style="margin-bottom:20px">
+          <div class="empty-state">Loading order details...</div>
+        </div>
+
+        <!-- Status Update Actions -->
+        <div id="driver-status-actions" class="card">
+          <h3 style="margin:0 0 12px">Update Delivery Status</h3>
+          <div id="driver-action-buttons" style="display:flex;gap:10px;flex-wrap:wrap"></div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/notifications.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/orders.js"></script>
+  <script src="js/driver.js"></script>
+  <script src="js/images-init.js"></script>
+</body>
+</html>

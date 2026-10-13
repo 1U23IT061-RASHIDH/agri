@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login | Digital Agri Marketplace</title>
+  <meta name="description" content="Login to your Digital Agri Marketplace account." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="assets/images-integration.css" />
+</head>
+<body data-page="login" data-auth="optional">
+  <div class="auth-page">
+    <div class="auth-visual">
+      <div class="auth-logo">
+        <div class="logo-mark">🌿</div>
+        <span>Digital Agri</span>
+      </div>
+      <h1>Welcome back to the marketplace</h1>
+      <p>Sign in to manage your products, track orders and connect with buyers and farmers across India.</p>
+      <div class="auth-feature-list">
+        <div class="auth-feature-item">
+          <div class="feat-icon">🌾</div>
+          List produce &amp; manage orders in real-time
+        </div>
+        <div class="auth-feature-item">
+          <div class="feat-icon">💬</div>
+          Negotiate prices directly with buyers
+        </div>
+        <div class="auth-feature-item">
+          <div class="feat-icon">📦</div>
+          Track deliveries from pickup to doorstep
+        </div>
+        <div class="auth-feature-item">
+          <div class="feat-icon">📊</div>
+          Live market prices &amp; analytics
+        </div>
+      </div>
+    </div>
+    <div class="auth-card-wrap">
+      <div class="auth-card">
+        <a class="back-link" href="index.html" id="login-back-btn">← Back to Home</a>
+        <h2>Sign in</h2>
+        <p class="auth-sub">Enter your credentials to access your dashboard</p>
+        <div class="notice" style="line-height:1.6;font-size:0.88rem">
+          <strong>Demo Logins:</strong><br>
+          🚚 Driver: <strong>driver@agri.com</strong> / <strong>driver123</strong> &nbsp;|&nbsp;
+          🛒 Buyer: <strong>buyer@agri.com</strong> / <strong>buyer123</strong><br>
+          🌾 Farmer: <strong>farmer@agri.com</strong> / <strong>farmer123</strong> &nbsp;|&nbsp;
+          ⚙️ Admin: <strong>admin@agri.com</strong> / <strong>admin123</strong>
+        </div>
+        <form id="login-form">
+          <div class="field">
+            <label for="login-email">Email address</label>
+            <input id="login-email" name="email" type="email" autocomplete="username" placeholder="you@example.com" required />
+            <div class="field-error"></div>
+          </div>
+          <div class="field">
+            <label for="login-password">Password</label>
+            <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Your password" required />
+            <div class="field-error"></div>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit" id="login-submit-btn" style="margin-top:4px">Sign in</button>
+        </form>
+        <p class="hint" style="margin-top:18px;text-align:center">Don't have an account? <a href="register.html" id="login-register-link">Create one</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/images-init.js"></script>
+</body>
+</html>

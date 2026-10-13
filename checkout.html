@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout | Digital Agri Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="assets/images-integration.css" />
+</head>
+<body data-page="checkout" data-auth="required" data-roles="BUYER">
+  <div class="app-shell">
+    <aside class="sidebar" id="app-sidebar"></aside>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <div class="main-wrap">
+      <header class="topbar" id="app-topbar"></header>
+      <main class="page">
+        <h1 class="page-title">Checkout</h1>
+        <p class="notice">Prototype payment flow only. Clicking Place Order does not transfer real money.</p>
+        <div class="grid" style="grid-template-columns:1fr 1fr">
+          <div class="card">
+            <h3>Buyer information</h3>
+            <div id="buyer-info"></div>
+          </div>
+          <div class="card">
+            <h3>Order summary</h3>
+            <div id="checkout-items"></div>
+            <p class="field-error" id="checkout-error"></p>
+            <button class="btn btn-primary" type="button" id="place-order-btn">Place order</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/notifications.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/images-init.js"></script>
+</body>
+</html>

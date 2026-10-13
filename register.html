@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register | Digital Agri Marketplace</title>
+  <meta name="description" content="Create your Digital Agri Marketplace account as a farmer or buyer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="assets/images-integration.css" />
+</head>
+<body data-page="register" data-auth="optional">
+  <div class="auth-page">
+    <div class="auth-visual">
+      <div class="auth-logo">
+        <div class="logo-mark">🌿</div>
+        <span>Digital Agri</span>
+      </div>
+      <h1>Join the marketplace today</h1>
+      <p>Register as a farmer or buyer and start trading directly. No middlemen, fair prices, full transparency.</p>
+      <div class="auth-feature-list">
+        <div class="auth-feature-item">
+          <div class="feat-icon">✅</div>
+          Free to join — no subscription required
+        </div>
+        <div class="auth-feature-item">
+          <div class="feat-icon">🔒</div>
+          Your data stays in your browser (prototype)
+        </div>
+        <div class="auth-feature-item">
+          <div class="feat-icon">🌾</div>
+          Farmers: list products &amp; get direct orders
+        </div>
+        <div class="auth-feature-item">
+          <div class="feat-icon">🛒</div>
+          Buyers: browse fresh produce &amp; track orders
+        </div>
+      </div>
+    </div>
+    <div class="auth-card-wrap">
+      <div class="auth-card">
+        <a class="back-link" href="index.html" id="register-back-btn">← Back to Home</a>
+        <h2>Create account</h2>
+        <p class="auth-sub">Fill in your details to get started</p>
+        <div class="notice">Prototype authentication only — stored in LocalStorage. Not production-secure.</div>
+        <form id="register-form">
+          <div class="field">
+            <label for="reg-name">Full name</label>
+            <input id="reg-name" name="name" placeholder="e.g. Green Valley FPO" required />
+            <div class="field-error"></div>
+          </div>
+          <div class="field">
+            <label for="reg-email">Email address</label>
+            <input id="reg-email" name="email" type="email" placeholder="you@example.com" required />
+            <div class="field-error"></div>
+          </div>
+          <div class="field">
+            <label for="reg-phone">Phone number</label>
+            <input id="reg-phone" name="phone" placeholder="10-digit mobile number" required />
+            <div class="field-error"></div>
+          </div>
+          <div class="field">
+            <label for="reg-password">Password</label>
+            <input id="reg-password" name="password" type="password" placeholder="Create a password" required />
+            <div class="field-error"></div>
+          </div>
+          <div class="field">
+            <label for="reg-role">I am a</label>
+            <select id="reg-role" name="role" required>
+              <option value="">Select your role</option>
+              <option value="FARMER">FARMER</option>
+              <option value="BUYER">BUYER</option>
+            </select>
+            <div class="field-error"></div>
+          </div>
+          <div class="field">
+            <label for="reg-location">Location</label>
+            <input id="reg-location" name="location" placeholder="e.g. Nashik, Maharashtra" required />
+            <div class="field-error"></div>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit" id="register-submit-btn" style="margin-top:4px">Create account</button>
+        </form>
+        <p class="hint" style="margin-top:18px;text-align:center">Already registered? <a href="login.html" id="register-login-link">Sign in</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/images-init.js"></script>
+</body>
+</html>
